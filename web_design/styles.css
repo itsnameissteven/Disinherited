@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica;
+    font-size: 27px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../content/pglit2.gif");
+    
+}
+.container {
+    text-align: center;
+    background-color: #380C6B;
+}
+.navigation-bar {
+    background-color: #EE7FB4;
+    /* border-top: 3px solid #EE7FB4; */
+    display: flex;
+    justify-content: row;
+    align-items: flex-end;
+    
+}
+ul {
+    padding: 5px 20px 5px 20px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    color: #380C6B;
+    background-color: #EE7FB4;
+}
