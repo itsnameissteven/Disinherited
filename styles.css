@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url("../content/pglit2.gif");
+    background-image: url("./content/pglit2.gif");
     text-align: center;
 }
 .container {
