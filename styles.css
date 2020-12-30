@@ -19,7 +19,7 @@ nav {
     height: 21vh;
 }
 .disinherited-logo {
-    margin: 3vh 1vh 1vh 2vh;
+    margin: 3vh 1vh 0 2vh;
     height: 21vh;
     /* filter: drop-shadow(8px 8px 10px rgb(255, 255, 255)) invert(90%); */
     float: left;
@@ -60,6 +60,32 @@ li {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("content/IMG_9687color2\ copy.jpg");
     background-size: cover;
     color: #ffffff;
+}
+.media-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 125vh;
+    width: 100%;
+    background: linear-gradient(#222222, #0b0b0b 90%);
+    color: #ffffff;
+}
+.silhouettes, .spotify-player {
+    margin: 12vh 6vh 0 12vh;
+}
+.spotify-player {
+    margin-top: 15vh;
+}
+
+.silhouettes {
+    filter:brightness(75%);
+    height: auto;
+    width: 35vw;
+}
+.youtube {
+    margin-bottom: 7vh;
+    position: absolute;
+    bottom: 0
 }
 .who {
     max-width: 500px;
@@ -136,10 +162,14 @@ li {
     transform:scaleX(1);
     transition: background-color 0.3s, color 0.3s;
 }
-
-
+.footer-container {
+    min-height: 100vh;
+}
 footer {
+    position: relative;
     height: 10vh;
+    width: 100%;
+    bottom: 0px;
     background-image: url("content/paperboard-carton-surface-beige-plain.jpg");
     background-size: cover;
     filter: brightness(70%);
@@ -193,4 +223,46 @@ svg {
 .social-icon:hover {
     fill: #6d6d6d;
     transition: fill 0.3s;
+}
+.portrait-1, .portrait-2{
+    margin: 0;
+    display: flex;
+    height:75vh;
+}
+#chris, #michael, #patrick, #steven {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("content/chris.jpg");
+    height: 75vh;
+    width: 50vw;
+    background-size: cover;
+    background-position: center;
+}
+#michael {
+    background-image: url("content/michael.jpg");
+    backdrop-filter: blur(5px);
+}
+#patrick {
+    background-image: url("content/patrick.jpg");
+}
+#steven {
+    background-image: url("content/steven.jpg");
+}
+.inner-text {
+    position: absolute;
+    color: rgb(168, 45, 45);
+    width: 20ch;
+    margin: auto;
+    padding: 20px;
+    z-index: 5;
+}
+
+.inner-text:hover {
+    color:crimson;
+    border: 2px solid crimson;
+}
+
+.container-1 {
+    position:absolute;
 }
