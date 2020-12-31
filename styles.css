@@ -253,9 +253,8 @@ svg {
     align-self: center;
     text-align: center;
     color:transparent;
-    width: 20ch;
-    padding: 30px;
-    margin: 0 auto;
+    width: 30ch;
+    padding: 20px;
 }
 .inner-text::before {
     content: "";
@@ -277,7 +276,7 @@ svg {
         height: 0; 
         border-top-color: white; 
         border-right-color: transparent; 
-        border-bottom-color: transparent; 
+        border-bottom-color: white; 
         border-left-color: transparent; 
     } 
  
@@ -300,7 +299,7 @@ svg {
     } 
 } 
 
-.inner-text::after {
+.inner-text:hover:after {
     content: "";
     position:absolute;
     top: -2px;
@@ -310,7 +309,7 @@ svg {
     background: transparent;
     border: 2px solid transparent;
 }
-.inner-text:hover::after { 
+.inner-text:after { 
     animation: animates 1s linear forwards; 
 } 
 
@@ -355,10 +354,14 @@ svg {
 
 .inner-text:hover {
     color: white;
-    transition-duration: 0.4s;
+}
+.inner-text::after{
+    color: white;
 }
 
 .blur {
   filter:blur(3px) brightness(50%);  
 }
+
+
 
