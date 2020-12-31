@@ -11,7 +11,6 @@ header {
     height: fit-content;
     padding-bottom: 30px;
     background-image: url("content/paperboard-carton-surface-beige-plain.jpg");
-    background-color: rgb(204, 182, 150);
     background-size: cover;
     filter: brightness(70%)
 }
@@ -24,7 +23,7 @@ nav {
     float: left;
     filter: invert(90%)
 }
-.logo{
+.logo {
     float: left;
 }
 .nav-bar {
@@ -68,6 +67,42 @@ li {
     width: 100%;
     background: linear-gradient(#222222, #0b0b0b 90%);
     color: #ffffff;
+}
+.merch-body, .shows-body, .contact-body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("content/Profile_Lake_1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.contact-body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("content/GoofyTree.jpg");
+}
+.shows-body {
+    background-image: url("content/Hardcore_Squat.jpg");
+    filter: brightness(50%) blur(1.25px) 
+}
+.shows-text {
+    position: absolute;
+    color: rgb(216, 216, 216);
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Source Serif Pro;
+    font-size: 3vh;
+    font-weight: 400;
+}
+.merch-text {
+    font-family: Source Serif Pro;
+    font-weight: 100;
+    font-size: 10vh;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .silhouettes, .spotify-player {
     margin: 12vh 6vh 0 12vh;
