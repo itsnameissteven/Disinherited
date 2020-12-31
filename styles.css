@@ -21,7 +21,6 @@ nav {
 .disinherited-logo {
     margin: 3vh 1vh 0 2vh;
     height: 21vh;
-    /* filter: drop-shadow(8px 8px 10px rgb(255, 255, 255)) invert(90%); */
     float: left;
     filter: invert(90%)
 }
@@ -229,17 +228,16 @@ svg {
     display: flex;
     height:75vh;
 }
-#chris, #michael, #patrick, #steven {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#chris, .michael, #patrick, #steven {
+    position:absolute;
     background-image: url("content/chris.jpg");
     height: 75vh;
     width: 50vw;
     background-size: cover;
     background-position: center;
 }
-#michael {
+.michael {
+    right:0;
     background-image: url("content/michael.jpg");
     backdrop-filter: blur(5px);
 }
@@ -247,22 +245,120 @@ svg {
     background-image: url("content/patrick.jpg");
 }
 #steven {
+    right: 0;
     background-image: url("content/steven.jpg");
 }
 .inner-text {
-    position: absolute;
-    color: rgb(168, 45, 45);
+    position:absolute;
+    align-self: center;
+    text-align: center;
+    color:transparent;
     width: 20ch;
-    margin: auto;
-    padding: 20px;
-    z-index: 5;
+    padding: 30px;
+    margin: 0 auto;
+}
+.inner-text::before {
+    content: "";
+    position:absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.inner-text:hover::before { 
+    animation: animate 1s linear forwards; 
+} 
+
+@keyframes animate { 
+    0% { 
+        width: 0; 
+        height: 0; 
+        border-top-color: white; 
+        border-right-color: transparent; 
+        border-bottom-color: transparent; 
+        border-left-color: transparent; 
+    } 
+ 
+    50% { 
+        width: 100%; 
+        height: 0; 
+        border-top-color: white; 
+        border-right-color: white; 
+        border-bottom-color: transparent; 
+        border-left-color: transparent; 
+    } 
+ 
+    100% { 
+        width: 100%; 
+        height: 100%; 
+        border-top-color: white; 
+        border-right-color: white; 
+        border-bottom-color: transparent; 
+        border-left-color: transparent; 
+    } 
+} 
+
+.inner-text::after {
+    content: "";
+    position:absolute;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.inner-text:hover::after { 
+    animation: animates 1s linear forwards; 
+} 
+
+@keyframes animates { 
+    0% { 
+        width: 0; 
+        height: 0; 
+        border-top-color: transparent; 
+        border-right-color: transparent; 
+        border-bottom-color: transparent; 
+        border-left-color: white; 
+    } 
+ 
+    50% { 
+        width: 0; 
+        height: 100%; 
+        border-top-color: transparent; 
+        border-right-color: transparent; 
+        border-bottom-color: white; 
+        border-left-color: white; 
+    } 
+ 
+    100% { 
+        width: 100%; 
+        height: 100%; 
+        border-top-color: transparent; 
+        border-right-color: transparent; 
+        border-bottom-color: white; 
+        border-left-color: white; 
+    } 
+} 
+
+#chris:hover, #chris::after {
+    filter:blur(3px) brightness(50%);
+}
+.align-text{
+    display: flex;
+    justify-content: center;
+    height: 75vh;
+    width: 50vw;
 }
 
 .inner-text:hover {
-    color:crimson;
-    border: 2px solid crimson;
+    color: white;
+    transition-duration: 0.4s;
 }
 
-.container-1 {
-    position:absolute;
+.blur {
+  filter:blur(3px) brightness(50%);  
 }
+
