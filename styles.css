@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: montserrat;
     font-size: 20px;
-    color: rgb(199, 199, 199);
+    color: rgb(255, 255, 255);
 }
 
 header {
@@ -12,7 +12,7 @@ header {
     padding-bottom: 30px;
     background-image: url("content/paperboard-carton-surface-beige-plain.jpg");
     background-size: cover;
-    filter: brightness(70%)
+    filter: brightness(90%)
 }
 nav {
     height: 21vh;
@@ -55,7 +55,7 @@ li {
 }
 .main-body {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("content/IMG_9687color2\ copy.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("content/IMG_9687color2\ copy.jpg");
     background-size: cover;
     color: #ffffff;
 }
@@ -83,12 +83,11 @@ li {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("content/GoofyTree.jpg");
 }
 .shows-body {
-    background-image: url("content/Hardcore_Squat.jpg");
-    filter: brightness(50%) blur(1.25px) 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("content/Hardcore_Squat.jpg");
 }
 .shows-text {
     position: absolute;
-    color: rgb(216, 216, 216);
+    color: rgb(255, 255, 255);
     z-index: 5;
     top: 50%;
     left: 50%;
@@ -206,7 +205,7 @@ footer {
     bottom: 0px;
     background-image: url("content/paperboard-carton-surface-beige-plain.jpg");
     background-size: cover;
-    filter: brightness(70%);
+    filter: brightness(90%);
     display: flex;
     justify-content: center;
     align-items: center;
